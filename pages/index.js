@@ -1,11 +1,12 @@
 function Home() {
-
-  let teste = "<h1>";
-  teste += "Olá, essa aqui é apenas uma página de teste! HEHEHE";
-  teste += "</h1>";
-  teste += "<br><br>Simples teste simples";
-
-  return teste;
+  return (
+    <>
+      <h1>Olá, essa aqui é apenas uma página de teste! HEHEHE</h1>
+      <br />
+      <br />
+      Simples teste simples
+    </>
+  );
 }
 
 export default Home;
