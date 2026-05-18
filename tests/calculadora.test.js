@@ -1,3 +1,3 @@
 test("nome do teste", function () {
-  console.log("e agora?");
+  console.log("esta função está sendo chamada?");
 });
