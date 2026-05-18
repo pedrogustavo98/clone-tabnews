@@ -6,8 +6,8 @@ function Home() {
       <br />
       Simples teste simples
 
-
-      <br>eita nós</br>
+      <br />
+      <br />eita nós
     </>
   );
 }
