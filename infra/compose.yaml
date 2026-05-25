@@ -1,0 +1,11 @@
+services:
+  database:
+    image: postgres:18-alpine
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: local_password
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432"
+
+      docker compose -f infra/compose.yaml up -d
