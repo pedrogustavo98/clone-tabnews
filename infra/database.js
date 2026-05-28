@@ -4,7 +4,7 @@ async function query (queryObject) {
     const client = new Client({
         host: "localhost",
         port: 5432,
-        user: "myuser",
+        user: "postgres",
         database: "mydb",
         password: "local_password",
     });

@@ -2,7 +2,7 @@ services:
   database:
     image: postgres:18-alpine
     environment:
-      POSTGRES_USER: myuser
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: local_password
       POSTGRES_DB: mydb
     ports:
