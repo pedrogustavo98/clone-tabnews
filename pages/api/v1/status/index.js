@@ -1,8 +1,13 @@
 import database from "../../../../infra/database";
 
 async function handler(request, response) {
-    const result = await database.query("SELECT 1 + 1 AS sum ");
-    response.status(200).json({chave: "são acima da média"});
+    try {
+        const result = await database.query("SELECT 1 + 2 AS sum ");
+        response.status(200).json({chave: "são acima da média", resultado: result.rows[0].sum});
+    } catch (error) {
+        console.error("Erro na API:", error);
+        response.status(500).json({erro: error.message});
+    }
 }
 
 export default handler 
