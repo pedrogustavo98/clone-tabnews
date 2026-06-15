@@ -7,6 +7,7 @@ function Home() {
       <br />
       <br />
       Simples teste simples
+      <span>Oush</span>
 
       <br />
       <br />eita nós
